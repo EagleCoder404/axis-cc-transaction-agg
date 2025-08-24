@@ -1,7 +1,8 @@
 import datetime
 from fastapi import FastAPI
 from decimal import Decimal
-from util import get_axis_transactions
+
+from .util import get_axis_transactions
 app = FastAPI()
 
 @app.get("/axis/get_transactions")

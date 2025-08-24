@@ -2,7 +2,7 @@ import email
 import re
 import os
 from imapclient import IMAPClient
-from models import Transaction
+from .models import Transaction
 
 def get_axis_transactions(from_date:str="2025/08/15", to_date:str="2025/09/15"):
     gmail_passcode = os.environ.get("DEV_GMAIL_PASSCODE")
