@@ -6,7 +6,7 @@ from .util import get_axis_transactions
 app = FastAPI()
 
 @app.get("/axis/get_transactions")
-def get_axis_trasnactions(from_date:str, to_date:str):
+def get_transactions(from_date:str, to_date:str):
     return get_axis_transactions(from_date, to_date)
 
 @app.get("/axis/get_unbilled")
